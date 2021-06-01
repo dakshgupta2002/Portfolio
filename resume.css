@@ -1,0 +1,248 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+}
+
+/*set bg top image fixed and display flex to justify(axis) and align(cross axis)*/
+header{
+    background-image: url("https://cdn.wallpapersafari.com/81/97/5OyBDR.jpg");
+    height: 70vh;
+    width: 100vw;
+    background-attachment: fixed;
+    margin: 0px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/*header has 3 divs: nav, name, links... flex each of them to display lists*/
+header div{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header li {
+    display: inline-block;
+    margin: 0px 50px 0px 50px;
+}
+
+/*navigation links stylings*/
+header li a{
+    
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: color 0.5s ease-in, border-bottom 1s;
+}
+
+#navigation a:hover{
+    color: blue;
+    border-bottom: #8e8e8e 1.5px solid;
+}
+
+/*name text styling*/
+header h1{
+    color: white;
+    font-size: 120px;
+    margin: 0px;
+    text-decoration-line: underline;
+}
+
+/*social links image styling*/
+#social-links li{
+    margin: 0px;
+    padding: 0px;
+    
+}
+#social-links li img{
+    height: 60px;
+    width: 60px;
+    border: whitesmoke 2px solid;
+    border-radius: 50%;
+    margin: 15px;
+    transition: filter 0.5s;
+}
+
+#social-links li img:hover{
+    filter: drop-shadow(1px 1px 20px #8e8e8e);
+}
+
+/*main part of the resume which further has sections divided*/
+
+main{
+    height: auto;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30vh;
+}
+
+/*alternate color of sections*/
+section{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    justify-content: center;  
+}
+
+section:nth-child(2n){
+    background-color: white;
+}
+section:nth-child(2n+1){
+    background-color: #fafafa;
+}
+
+
+main div{
+    display: flex;
+    justify-content: center;
+}
+
+/*image styling with negative margin*/
+#my-image{
+    height: 250px;
+}
+#my-image img{
+    top:-70px;
+    height: 300px;
+    width: 300px;
+    border: #cfd8dc 5px solid;
+    border-radius: 50%;
+    position: relative;
+    top: -70px;
+    filter: drop-shadow(0px -4px 4px #999999);
+    
+
+}
+
+/*class to style every section heading*/ 
+.section-heading{
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+    margin: 0px;
+    padding-bottom: 20px;
+    text-decoration-line: underline;
+    font-family: sans-serif;
+}
+
+.section-text{
+    width: 70%;
+    position: relative;
+    justify-content: center;
+    font-size: larger;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    line-height:30px;
+}
+
+.section-image{
+    height: 50px;
+    width: 50px;
+    filter: grayscale(1);
+}
+.section-header{
+    display: flex;
+    justify-content: center;
+}
+
+/*skills is container which holds all skills*/
+skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.skill-progress{
+    background-color: lightgray;
+    height: 80px;
+    width: 320px;
+    border-start-end-radius: 40px;
+    border-end-start-radius: 40px;
+    border-end-end-radius: 40px;
+    border-start-start-radius: 40px;
+    justify-content: left;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 40px;
+}
+
+.skill-description{
+    height: 100%;
+    background: linear-gradient(red, blue);
+    border-start-start-radius: 40px;
+    border-end-start-radius: 40px;
+    color: white;
+    font-size: x-large;
+    font-family: fantasy;
+    text-align: center;
+}
+
+#skill-one{
+    width: 50%;
+}
+#skill-two{
+    width: 80%
+}
+#skill-three{
+    width: 65%;
+}
+#skill-four{
+    width: 33%;
+}
+#skill-five{
+    width: 15%;
+}
+
+/*education table*/
+td, th{
+    padding: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+    font-size: xx-large;
+    
+}
+
+tr:nth-child(2n){
+    background-color: papayawhip;
+}
+
+#contact{
+    width: 100vw;
+    height: auto;
+    min-height: 100px;
+    background-image: linear-gradient(45deg , white 20%, gray 60%, darkblue 80%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#form-address{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+input, button{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+#address{
+    font-size: larger;
+    color: white;
+    text-transform: uppercase
+
+}
+
+
+
+
